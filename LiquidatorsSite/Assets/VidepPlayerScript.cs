@@ -18,6 +18,7 @@ public class VidepPlayerScript : MonoBehaviour
 
     private string intelVid1 = "https://dl.dropbox.com/s/9d7ztnoqva9s3t0/F_Intel_P1_small.mp4?dl=1";
     private string intelVid2 = "https://dl.dropbox.com/s/e0neq0yzpzrdq76/F_Intel_P2_small.mp4?dl=1";
+    private string intelVid3 = "https://dl.dropbox.com/s/0ndyseygj1djdmo/F_Intel_P3_small_borderless.mp4?dl=1";
 
     private string missionVid1 = "https://dl.dropbox.com/s/ctvciybnior9bh3/F_TheMission_P1_small.mp4?dl=1";
     private string missionVid2 = "https://dl.dropbox.com/s/h8i8ly3wg1b65yn/F_TheMission_P2_small.mp4?dl=1";
@@ -145,7 +146,11 @@ public class VidepPlayerScript : MonoBehaviour
         {
             vp.url = intelVid2;
         }
-        else if (scrollProgress == 2)
+        else if(scrollProgress == 2)
+        {
+            vp.url = intelVid3;
+        }
+        else if (scrollProgress == 3)
         {
             scrollProgress--;
         }
